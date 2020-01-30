@@ -1,19 +1,18 @@
 jekyll-pandoc-mermaid
 ==================
 
-## NOTE : This project was forked from [jekyll-mermaid](https://github.com/jasonbellamy/jekyll-mermaid) and customized 
+**jekyll-pandoc-mermaid** can solve rendering issue that occures when using [jekyll-pandoc](https://github.com/mfenner/jekyll-pandoc) and [jekyll-mermaid](https://github.com/jasonbellamy/jekyll-mermaid) plugin together"
+ 
+**'jekyll-pandoc-mermaid' is enable only when using gem `jekyll-pandoc` and `jekyll-mermaid`**
 
-A [Jekyll](http://jekyllrb.com/) plugin to simplify the creation of [mermaid](https://github.com/knsv/mermaid) diagrams and flowcharts in your posts and pages converted from [Pandoc](https://pandoc.org).
-
-'jekyll-pandoc-mermaid' uses [Jekyll Tag-blocks](https://jekyllrb.com/docs/plugins/tags/#tag-blocks) 
-
-__'jekyll-pandoc-mermaid' is recommended only when using gem `jekyll-pandoc`.__
+'jekyll-pandoc-mermaid' uses [Jekyll Hook](https://jekyllrb.com/docs/plugins/hooks).
 
 
-## Requirements
+## Dependencies
 
 * Jekyll, version `4.0` or higher
-* [Jekyll-Pandoc](https://github.com/mfenner/jekyll-pandoc), version `2.01` or higher (Jekyll-Pandoc requires 'pandoc-ruby')
+* [jekyll-pandoc](https://github.com/mfenner/jekyll-pandoc), version `2.0.1` or higher (Jekyll-Pandoc requires 'pandoc-ruby')
+* [jekyll-mermaid](https://github.com/jasonbellamy/jekyll-mermaid), version `1.0.0` or higher
 
 
 ## Installation
@@ -34,21 +33,22 @@ plugin:
   - jekyll-pandoc-mermaid
 ```
 
-2. 'jekyll-pandoc-mermaid' is recommended only when set as follows in the Jekyll `_config.yml`:
+2. 'jekyll-pandoc-mermaid' is enable only when set as follows in the Jekyll `_config.yml`:
 ```
 markdown: Pandoc
 ```
+Please see the [jekyll-pandoc Configuration](https://github.com/mfenner/jekyll-pandoc#configuration) for more configuration options.
 
-3. 'Add [mermaid](https://github.com/knsv/mermaid) source javascript file path to the Jekyll `_config.yml`:
+
+3. 'jekyll-pandoc-mermaid' is enable only when set as follows in the Jekyll `_config.yml`:
 ```
-pandoc_mermaid:
+mermaid:
   src: 'path/to/mermaid.js' (eg. https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js)
 ```
+Please see the [jekyll-mermaid Configuration](https://github.com/jasonbellamy/jekyll-mermaid#config) for more configuration options.
 
 
 ## Usage
-
-Simply include the [jekyll-pandoc-mermaid](https://github.com/hoonti06/jekyll-pandoc-mermaid) block helper in any of your templates.
 
 ```liquid
 {% mermaid %}
@@ -60,7 +60,7 @@ graph TD
 {% endmermaid %}
 ```
 
-Please see the [mermaid website](https://mermaid-js.github.io/mermaid/#/) for more examples.
+Please see the [jekyll-mermaid usage](https://github.com/jasonbellamy/jekyll-mermaid#usage) and [mermaid website](https://mermaid-js.github.io/mermaid/#/) for more examples.
 
 
 ## Contributing
