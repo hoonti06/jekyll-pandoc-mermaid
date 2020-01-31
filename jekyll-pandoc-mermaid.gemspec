@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'jekyll-pandoc-mermaid'
-  s.version     = '1.0.1'
+  s.version     = '1.0.2'
   s.summary     = "jekyll-pandoc-mermaid can help to use jekyll-mermaid plugin when using jekyll-pandoc plugin"
   s.description = "jekyll-pandoc-mermaid can solve rendering issue that occures when using jekyll-pandoc and jekyll-mermaid plugin together"
   s.authors     = ['Jihoon Kim']
