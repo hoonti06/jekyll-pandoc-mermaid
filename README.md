@@ -1,7 +1,7 @@
 jekyll-pandoc-mermaid
 ==================
 
-**jekyll-pandoc-mermaid** can solve rendering issue that occures when using [jekyll-pandoc](https://github.com/mfenner/jekyll-pandoc) and [jekyll-mermaid](https://github.com/jasonbellamy/jekyll-mermaid) plugin together"
+**jekyll-pandoc-mermaid** can solve rendering issue that occures when using [jekyll-pandoc](https://github.com/mfenner/jekyll-pandoc) and [jekyll-mermaid](https://github.com/jasonbellamy/jekyll-mermaid) plugin together
  
 **'jekyll-pandoc-mermaid' is enable only when using gem `jekyll-pandoc` and `jekyll-mermaid`**
 
@@ -18,7 +18,7 @@ jekyll-pandoc-mermaid
 ## Installation
 
 Run `bundle install` after adding the gem to your Jekyll `Gemfile`:
-```
+```ruby
 gem "jekyll-pandoc-mermaid"
 ```
 
@@ -28,20 +28,20 @@ Please see the [Jekyll documentation](http://jekyllrb.com/docs/plugins/#installi
 ## Configuration
 
 1. Add the gem to the Jekyll `_config.yml`:
-```
+```yml
 plugin:
   - jekyll-pandoc-mermaid
 ```
 
 2. 'jekyll-pandoc-mermaid' is enable only when set as follows in the Jekyll `_config.yml`:
-```
+```yml
 markdown: Pandoc
 ```
 Please see the [jekyll-pandoc Configuration](https://github.com/mfenner/jekyll-pandoc#configuration) for more configuration options.
 
 
 3. 'jekyll-pandoc-mermaid' is enable only when set as follows in the Jekyll `_config.yml`:
-```
+```yml
 mermaid:
   src: 'path/to/mermaid.js' (eg. https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js)
 ```
